@@ -19,6 +19,12 @@ export const MarketOverview: React.FC<Props> = ({ data, isLoading }) => {
   }
 
   const isPositive = (data.daily_change || 0) >= 0;
+  const rsiText =
+    typeof data.rsi_interpretation === 'object' && data.rsi_interpretation !== null
+      ? (data.rsi_interpretation as any).description || 'Target entry zone: < 42.0'
+      : typeof data.rsi_interpretation === 'string'
+      ? data.rsi_interpretation
+      : 'Target entry zone: < 42.0';
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -89,8 +95,8 @@ export const MarketOverview: React.FC<Props> = ({ data, isLoading }) => {
         <div className="text-2xl lg:text-3xl font-extrabold text-white tracking-tight">
           {data.rsi_14 ? data.rsi_14.toFixed(1) : 'N/A'}
         </div>
-        <p className="text-[11px] mt-2 truncate text-slate-400" title={data.rsi_interpretation}>
-          {data.rsi_interpretation || 'Target entry zone: < 42.0'}
+        <p className="text-[11px] mt-2 truncate text-slate-400" title={rsiText}>
+          {rsiText}
         </p>
       </div>
     </div>

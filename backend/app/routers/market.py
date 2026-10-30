@@ -46,7 +46,11 @@ async def get_market_overview(db: AsyncSession = Depends(get_db)):
         "pe_ratio": current_val.get("pe_ratio"),
         "pb_ratio": current_val.get("pb_ratio"),
         "rsi_14": current_tech.get("rsi_14"),
-        "rsi_interpretation": current_tech.get("rsi_interpretation"),
+        "rsi_interpretation": (
+            current_tech.get("rsi_interpretation", {}).get("description")
+            if isinstance(current_tech.get("rsi_interpretation"), dict)
+            else (current_tech.get("rsi_interpretation") or "Neutral momentum")
+        ),
         "high_52w": current_tech.get("high_52w"),
         "low_52w": current_tech.get("low_52w"),
         "sma_200": current_tech.get("sma_200"),
