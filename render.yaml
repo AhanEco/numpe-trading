@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: numpe-trading
+    runtime: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: DATABASE_URL
+        value: sqlite+aiosqlite:///./numpe.db
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ADMIN_PASSWORD
+        value: admin123
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: UPDATE_INTERVAL_MINUTES
+        value: 30
+      - key: LOG_LEVEL
+        value: INFO
