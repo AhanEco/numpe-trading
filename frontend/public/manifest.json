@@ -1,0 +1,16 @@
+{
+  "name": "NUMPE Trading Software",
+  "short_name": "NUMPE",
+  "description": "Intelligent Market Analysis & Investment Monitor",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#0a0e1a",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
