@@ -44,7 +44,7 @@ export const InvestmentSignal: React.FC<Props> = ({ signal, isLoading }) => {
             <span className="text-xs text-slate-400">As of {signal.date}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight mt-1">
-            NUMPE INVESTMENT MONITOR
+            NUMPECRAFT INVESTMENT MONITOR
           </h2>
         </div>
 

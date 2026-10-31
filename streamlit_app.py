@@ -1,6 +1,6 @@
 """
-NUMPE TRADING SOFTWARE
-======================
+NUMPECRAFT
+==========
 Institutional Quantitative Investment Monitoring & Financial Intelligence Platform
 Exclusively Dedicated to: NIFTY 100 EQUAL WEIGHT INDEX (NSE: NIFTY100_EQL_WGT.NS)
 
@@ -23,7 +23,7 @@ import yfinance as yf
 # PAGE CONFIGURATION & INSTITUTIONAL DARK THEME
 # -----------------------------------------------------------------------------
 st.set_page_config(
-    page_title="NUMPE Trading | Nifty 100 Equal Weight",
+    page_title="Numpecraft | Nifty 100 Equal Weight",
     page_icon="⚖️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -363,7 +363,7 @@ else:
 # Header
 col_header, col_date = st.columns([3, 1])
 with col_header:
-    st.title("NUMPE TRADING SOFTWARE")
+    st.title("NUMPECRAFT")
     st.caption("Data-Driven Decisions. Disciplined Investing. | Long-Term Quantitative Intelligence")
 with col_date:
     st.markdown(f"<div style='text-align: right; padding-top: 10px; color: #94a3b8; font-size: 0.85rem;'><b>Observation Date:</b> {summary['date']}<br><span style='color: #60a5fa; font-weight: 600;'>{summary['source']}</span></div>", unsafe_allow_html=True)
@@ -652,7 +652,7 @@ with tab_rules:
 st.markdown(
     """
     <div class="disclaimer-box">
-        <b>REGULATORY & QUANTITATIVE DISCLAIMER:</b> NUMPE Trading Software is an informational decision-support and quantitative monitoring platform. All signals, calculations, metrics, and analyses are generated automatically for disciplined research and must never be construed as investment advice, a financial endorsement, or a guarantee of future returns.
+        <b>REGULATORY & QUANTITATIVE DISCLAIMER:</b> Numpecraft is an informational decision-support and quantitative monitoring platform. All signals, calculations, metrics, and analyses are generated automatically for disciplined research and must never be construed as investment advice, a financial endorsement, or a guarantee of future returns.
     </div>
     """,
     unsafe_allow_html=True,

@@ -110,7 +110,7 @@ export const Methodology: React.FC = () => {
             Important Compliance & Investor Transparency Notice
           </div>
           <p className="leading-relaxed">
-            NUMPE Trading Software is a personal quantitative monitoring tool created strictly for informational and analytical assistance.
+            Numpecraft is a personal quantitative monitoring tool created strictly for informational and analytical assistance.
             No signal or indicator calculation constitutes a guaranteed prediction, financial advice, or an automated trading execution.
             All investments in Indian equities and index funds carry market risk.
           </p>

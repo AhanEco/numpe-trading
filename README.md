@@ -1,4 +1,4 @@
-# NUMPE TRADING SOFTWARE
+# Numpecraft
 
 > **“Data-Driven Decisions. Disciplined Investing.”**
 
@@ -114,5 +114,5 @@ Simply connect this repository to Render or Railway. The root `Dockerfile` autom
 
 ## Disclaimers & Intended Usage
 
-NUMPE Trading Software is a personal quantitative financial research and investment monitoring platform. It is not an algorithmic trading bot and **does not execute trades automatically**. Calculations and alerts represent indicator evaluations and do not constitute registered investment advice or guarantees of financial returns.
+Numpecraft is a personal quantitative financial research and investment monitoring platform. It is not an algorithmic trading bot and **does not execute trades automatically**. Calculations and alerts represent indicator evaluations and do not constitute registered investment advice or guarantees of financial returns.
 

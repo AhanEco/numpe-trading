@@ -23,7 +23,7 @@ async def health_check():
     m_open, m_desc = is_market_open()
     return {
         "status": "healthy",
-        "app": "NUMPE TRADING SOFTWARE",
+        "app": "Numpecraft",
         "version": "1.0.0",
         "timestamp_ist": format_ist_timestamp(now_ist()),
         "market_status": m_desc,

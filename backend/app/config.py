@@ -59,7 +59,7 @@ class Settings(BaseSettings):
     )
 
     # ── Application ───────────────────────────────────────────────────────
-    APP_NAME: str = "Numpe Trading Software"
+    APP_NAME: str = "Numpecraft"
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
     LOG_LEVEL: str = "INFO"

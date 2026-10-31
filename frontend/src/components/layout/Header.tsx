@@ -44,9 +44,9 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
           <div>
             <div className="flex items-center space-x-2">
-              <h1 className="text-xl font-extrabold tracking-wider text-white">NUMPE</h1>
+              <h1 className="text-xl font-extrabold tracking-wider text-white">Numpecraft</h1>
               <span className="text-xs font-semibold px-1.5 py-0.5 rounded bg-blue-950 text-blue-400 border border-blue-800">
-                TRADING SOFTWARE
+                PRO
               </span>
             </div>
             <p className="text-xs text-slate-400">

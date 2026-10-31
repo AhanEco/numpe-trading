@@ -70,7 +70,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="NUMPE TRADING SOFTWARE API",
+    title="Numpecraft API",
     description="Quantitative Financial Intelligence and Investment Monitoring Platform for Nifty 100 Equal Weight Index.",
     version="1.0.0",
     lifespan=lifespan,
@@ -134,7 +134,7 @@ else:
     @app.get("/", tags=["Root"])
     async def root():
         return {
-            "brand": "NUMPE TRADING SOFTWARE",
+            "brand": "Numpecraft",
             "tagline": "Data-Driven Decisions. Disciplined Investing.",
             "instrument": "Nifty 100 Equal Weight Index",
             "status": "Online",
